@@ -1,0 +1,32 @@
+@use '@/sections/Hero/Hero' as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth !important;
+}
+
+
+*::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    display: none;
+    width: 0px;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar-track {
+    display: none;
+    width: 0;
+    height: 0;
+}

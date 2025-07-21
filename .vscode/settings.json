@@ -1,0 +1,43 @@
+{
+    "workbench.remoteIndicator.showExtensionRecommendations": true,
+    "yaml.extension.recommendations": true,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "prettier.singleQuote": false,
+    "eslint.enable": true,
+    "prettier.enable": true,
+    "prettier.semi": true,
+    "prettier.trailingComma": "es5",
+    "[javascriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "files.insertFinalNewline": true,
+        "javascript.preferences.quoteStyle": "double",
+        "editor.indentSize": "tabSize",
+    },
+    "[jsx-tags]": {
+        "editor.autoIndent": "advanced",
+        "files.autoSave": "off",
+    },
+    "editor.trimAutoWhitespace": true,
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "editor.autoIndent": "advanced",
+        "editor.formatOnSave": true,
+    },
+    "scss.format.enable": true,
+    "scss.format.newlineBetweenRules": true,
+    "json.format.enable": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.codeActionsOnSave": {
+        "source.removeUnusedImports": "always",
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "tailwindCSS.emmetCompletions": true,
+"tailwindCSS.experimental.configFile": "./tailwind.config.js"
+}
