@@ -1,5 +1,5 @@
 .demo-hero-section {
-    @apply px-4 min-h-screen max-w-screen-2xl 3xl:max-w-screen-3xl mx-auto;
+    @apply px-4 max-w-screen-2xl 3xl:max-w-screen-3xl mx-auto;
 
     .demo-navbar {
         @apply flex py-3 sm:py-5 flex-wrap justify-between items-center gap-4;
