@@ -12,6 +12,11 @@ module.exports = {
         xs: "480px",
         "3xl": "1800px",
       },
+      fontFamily: {
+        sans: ["Gotham-Regular"],
+        medium: ["Gotham-Medium"],
+        bold: ["Gotham-Bold"],
+      },
     },
   },
   plugins: [],

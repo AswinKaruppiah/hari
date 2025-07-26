@@ -1,3 +1,5 @@
+import Gallery from "@/sections/Gallery/Gallery";
+import GetInTouch from "@/sections/GetInTouch/GetInTouch";
 import Hero from "@/sections/Hero/Hero";
 import Head from "next/head";
 
@@ -12,6 +14,8 @@ export default function Home() {
       </Head>
       <>
         <Hero />
+        <Gallery />
+        <GetInTouch />
       </>
     </>
   );
