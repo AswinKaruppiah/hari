@@ -1,5 +1,5 @@
 
-import About from "@/sections/About/About";
+import OurFacilities from "@/sections/OurFacilities/OurFacilities";
 import Head from "next/head";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
-        <About />
+        <OurFacilities />
       </>
     </>
   );
