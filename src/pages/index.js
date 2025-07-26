@@ -1,3 +1,4 @@
+import Footer from "@/sections/Footer/Footer";
 import Gallery from "@/sections/Gallery/Gallery";
 import GetInTouch from "@/sections/GetInTouch/GetInTouch";
 import Hero from "@/sections/Hero/Hero";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <Gallery />
         <GetInTouch />
+        <Footer />
       </>
     </>
   );

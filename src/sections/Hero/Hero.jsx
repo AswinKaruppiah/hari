@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { animateFadeYVariants } from "@/utils/animate";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -13,7 +14,9 @@ export default function Hero() {
         className="demo-navbar"
       >
         <h3 className="demo-company-name">Travels</h3>
-        <button className="demo-primary-btn">Book now</button>
+        <Link className="demo-primary-btn" href={"#getintouch-section"}>
+          Book now
+        </Link>
       </motion.div>
       <div className="demo-hero-container">
         <div className="absolute inset-0">

@@ -1,4 +1,4 @@
-import { alertVariants } from "@/utils/animate";
+import { alertVariants, animateFadeYVariants } from "@/utils/animate";
 import { CloseIcon, TickIcon } from "@/utils/icon";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
@@ -38,7 +38,14 @@ export default function GetInTouch() {
   }
 
   return (
-    <div className="demo-getin-touch-section">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      variants={animateFadeYVariants()}
+      viewport={{ once: true, amount: 0.5 }}
+      className="demo-getin-touch-section"
+      id="getintouch-section"
+    >
       <motion.div
         layout
         transition={{ type: "spring", stiffness: 100, damping: 10 }}
@@ -131,6 +138,6 @@ export default function GetInTouch() {
           </button>
         </form>
       </motion.div>
-    </div>
+    </motion.section>
   );
 }
