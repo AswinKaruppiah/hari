@@ -19,7 +19,7 @@ export default function About() {
                     <div className="first-image">
                         <div className="first-image-section">
                             <img
-                                src="/images/traveler1.jpg"
+                                src="/images/about-image1.jpg"
                                 alt="Woman traveler in desert landscape"
                             />
                         </div>
@@ -28,7 +28,7 @@ export default function About() {
                     <div className="sec-image">
                         <div className="sec-image-section">
                             <img
-                                src="/images/traveler2.jpg"
+                                src="/images/about-image2.jpg"
                                 alt="Male traveler with backpack"
                             />
                         </div>

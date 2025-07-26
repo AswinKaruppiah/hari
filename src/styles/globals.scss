@@ -1,6 +1,9 @@
+@use "./fonts";
+
 @use '@/sections/Hero/Hero' as *;
 @use '@/sections/About/About' as *;
 @use '@/sections/OurFacilities/OurFacilities' as *;
+@use '@/sections/WeProvided/WeProvided' as *;
 
 @tailwind base;
 @tailwind components;

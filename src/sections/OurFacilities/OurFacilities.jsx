@@ -44,17 +44,17 @@ export default function OurFacilities() {
                         {features.map(({ label, description, icon: Icon }, index) => (
                             <div
                                 key={index}
-                                className="features-section-card group hover:bg-[#567593] hover:shadow-md"
+                                className="features-section-card"
                             >
                                 <div className="features-section-inner">
-                                    <div className="features-section-icon-layer group-hover:bg-white">
-                                        <Icon className="features-section-icon group-hover:text-[#567593]" />
+                                    <div className="features-section-icon-layer">
+                                        <Icon className="features-section-icon" />
                                     </div>
-                                    <h3 className="features-section-heading group-hover:text-white">
+                                    <h3 className="features-section-heading">
                                         {label}
                                     </h3>
                                 </div>
-                                <p className="features-section-text group-hover:text-white">{description}</p>
+                                <p className="features-section-text">{description}</p>
                             </div>
                         ))}
                     </div>
@@ -64,7 +64,7 @@ export default function OurFacilities() {
                 <div>
                     <div className="features-section-right">
                         <Image
-                            src="/images/traveler2.jpg"
+                            src="/images/ourfecility-image.jpg"
                             alt="Luxury Bus"
                             width={700}
                             height={480}
