@@ -1,4 +1,8 @@
-import { animateFadeYVariants, animateYChildVariants, animateYStriggerVariants } from "@/utils/animate";
+import {
+  animateFadeYVariants,
+  animateYChildVariants,
+  animateYStriggerVariants,
+} from "@/utils/animate";
 import Image from "next/image";
 import {
   FaUserTie,
@@ -7,7 +11,6 @@ import {
   FaBed,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-
 
 export default function OurFacilities() {
   const features = [
@@ -48,14 +51,19 @@ export default function OurFacilities() {
             Crafted for the Road
           </motion.h2>
 
-
           <motion.div
             variants={animateYStriggerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0 }} className="features-section">
+            viewport={{ once: true, amount: 0 }}
+            className="features-section"
+          >
             {features.map(({ label, description, icon: Icon }, index) => (
-              <motion.div variants={animateYChildVariants} key={index} className="features-section-card">
+              <motion.div
+                variants={animateYChildVariants}
+                key={index}
+                className="features-section-card"
+              >
                 <div className="features-section-inner">
                   <div className="features-section-icon-layer">
                     <Icon className="features-section-icon" />
@@ -85,17 +93,16 @@ export default function OurFacilities() {
                 className="features-section-right-image"
               />
             </motion.div>
-
           </div>
           <div className="features-section-right-text">
             <motion.p
               initial="hidden"
               whileInView="visible"
               variants={animateFadeYVariants({ opacityValue: 0.7 })}
-              viewport={{ once: true, amount: 0.5 }}>
+              viewport={{ once: true, amount: 0.5 }}
+            >
               We believe that a comfortable journey begins with thoughtful
               services. From the moment you board, our experienced crew ensures
-
             </motion.p>
             <motion.p
               initial="hidden"
@@ -103,7 +110,7 @@ export default function OurFacilities() {
               variants={animateFadeYVariants({ opacityValue: 0.7 })}
               viewport={{ once: true, amount: 0.5 }}
             >
-              Whether it's our trained boarding crew, smooth luggage
+              Whether it&apos;s our trained boarding crew, smooth luggage
               handling, or our clean sleeper berths each feature is crafted to
             </motion.p>
           </div>
