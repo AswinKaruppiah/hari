@@ -10,7 +10,7 @@
     }
 
     .demo-hero-container {
-        @apply relative rounded-2xl overflow-clip min-h-screen sm:min-h-[630px] 3xl:min-h-[760px] sm:max-h-[630px] 3xl:max-h-[760px];
+        @apply relative rounded-2xl overflow-clip min-h-[80vh] sm:min-h-[630px] 3xl:min-h-[760px] sm:max-h-[630px] 3xl:max-h-[760px];
 
         .demo-hero-title {
             @apply absolute m-3 md:m-5 bg-white/50 rounded-3xl max-w-sm md:max-w-xl left-0 backdrop-blur-sm px-4 md:px-6 py-6 md:py-8;
