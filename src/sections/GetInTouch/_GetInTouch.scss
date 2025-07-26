@@ -1,0 +1,73 @@
+.demo-getin-touch-section {
+    @apply px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40 py-10 md:py-14 max-w-screen-2xl 3xl:max-w-screen-3xl mx-auto;
+
+    .demo-getin-touch-container {
+        @apply rounded-3xl grid grid-cols-1 md:grid-cols-2 p-2 sm:p-6 gap-4;
+        background-color: #B9F089;
+
+        .demo-getin-touch-content {
+            @apply pt-3 space-y-4 flex flex-col justify-between gap-4;
+
+            span {
+                @apply px-4 py-2 text-white text-sm md:text-base rounded-3xl;
+                background: #1E2327;
+            }
+
+            h2 {
+                @apply text-3xl md:text-5xl font-medium;
+            }
+
+            p {
+                @apply text-sm md:text-base max-w-3xl opacity-70 mx-auto;
+            }
+        }
+
+        form {
+            @apply bg-white p-3 sm:p-6 space-y-6 rounded-3xl;
+
+            .demo-input-container {
+                @apply grid grid-cols-2 gap-6;
+
+                .demo-input-container-input-box {
+                    @apply flex flex-col gap-2 col-span-2;
+
+                    label {
+                        @apply opacity-80 font-medium text-base;
+                    }
+
+                    textarea,
+                    input {
+                        @apply border border-gray-200 p-2 rounded-xl w-full placeholder:text-sm outline-[#BAF48A];
+                    }
+                }
+            }
+
+            .demo-alert-success {
+                @apply bg-[#BAF48A] bg-opacity-30 flex gap-2 items-center p-2.5 w-full rounded-xl;
+
+                .demo-alert-icon-success {
+                    @apply bg-green-200 h-10 aspect-square rounded-full flex justify-center items-center;
+                }
+
+                h6 {
+                    @apply text-sm sm:text-base;
+                }
+            }
+
+            /* Error alert */
+            .demo-alert-error {
+                @apply bg-red-400 bg-opacity-30 flex gap-2 items-center p-2.5 w-full rounded-xl;
+
+                .demo-alert-icon-error {
+                    @apply bg-red-300 h-10 aspect-square rounded-full flex justify-center items-center;
+                }
+
+                h6 {
+                    @apply text-sm sm:text-base;
+                }
+            }
+
+
+        }
+    }
+}

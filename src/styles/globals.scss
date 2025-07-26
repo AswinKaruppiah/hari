@@ -1,6 +1,10 @@
 @use "./fonts";
 
+// sections
 @use '@/sections/Hero/Hero' as *;
+@use '@/sections/Gallery/Gallery' as *;
+@use '@/sections/GetInTouch/GetInTouch' as *;
+@use '@/sections/Footer/Footer' as *;
 @use '@/sections/About/About' as *;
 @use '@/sections/OurFacilities/OurFacilities' as *;
 @use '@/sections/WeProvided/WeProvided' as *;
@@ -14,7 +18,13 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Gotham-Regular';
     scroll-behavior: smooth !important;
+}
+
+body {
+    background-color: rgba(236, 250, 229, 0.5);
+    color: #231F2A;
 }
 
 

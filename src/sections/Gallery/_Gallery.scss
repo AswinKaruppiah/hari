@@ -1,0 +1,23 @@
+.demo-gallery-section {
+    @apply px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40 py-10 md:py-14 lg:py-28 max-w-screen-2xl 3xl:max-w-screen-3xl mx-auto;
+
+    .demo-gallery-content {
+        @apply text-center space-y-5;
+
+        h2 {
+            @apply text-3xl md:text-5xl font-medium;
+        }
+
+        p {
+            @apply text-sm md:text-base max-w-3xl mx-auto;
+        }
+    }
+
+    .demo-gallery-container {
+        @apply min-h-[450px] lg:px-10 mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:grid-rows-2 gap-4;
+
+        .demo-gallery-item {
+            @apply overflow-clip min-h-52 rounded-2xl col-span-1;
+        }
+    }
+}
