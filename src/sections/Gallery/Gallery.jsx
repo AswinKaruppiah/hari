@@ -7,11 +7,11 @@ import {
 } from "@/utils/animate";
 
 const images = [
-  { src: "/images/image-1.jpg", alt: "image-1" },
-  { src: "/images/image-2.jpg", alt: "image-2", style: "md:row-span-2" },
-  { src: "/images/image-3.jpg", alt: "image-3" },
-  { src: "/images/image-4.jpg", alt: "image-4" },
-  { src: "/images/image-5.jpg", alt: "image-5" },
+  { src: "/images/image-1.webp", alt: "image-1" },
+  { src: "/images/image-2.webp", alt: "image-2", style: "md:row-span-2" },
+  { src: "/images/image-3.webp", alt: "image-3" },
+  { src: "/images/image-4.webp", alt: "image-4" },
+  { src: "/images/image-5.webp", alt: "image-5" },
 ];
 
 export default function Gallery() {
