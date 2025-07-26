@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 
+
 export default function OurFacilities() {
   const features = [
     {
@@ -47,23 +48,24 @@ export default function OurFacilities() {
             variants={animateFadeYVariants()}
             viewport={{ once: true, amount: 0.5 }}
           >
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            variants={animateFadeYVariants()}
+            viewport={{ once: true, amount: 0.5 }}
+          >
             Rooted in Comfort, <br />
             Crafted for the Road
           </motion.h2>
+
 
           <motion.div
             variants={animateYStriggerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0 }}
-            className="features-section"
-          >
+            viewport={{ once: true, amount: 0 }} className="features-section">
             {features.map(({ label, description, icon: Icon }, index) => (
-              <motion.div
-                variants={animateYChildVariants}
-                key={index}
-                className="features-section-card"
-              >
+              <motion.div variants={animateYChildVariants} key={index} className="features-section-card">
                 <div className="features-section-inner">
                   <div className="features-section-icon-layer">
                     <Icon className="features-section-icon" />
@@ -93,6 +95,7 @@ export default function OurFacilities() {
                 className="features-section-right-image"
               />
             </motion.div>
+
           </div>
           <div className="features-section-right-text">
             <motion.p
