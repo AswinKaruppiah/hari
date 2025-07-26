@@ -19,7 +19,7 @@
 }
 
 .features-section-card {
-    @apply rounded-xl h-[200px] p-5 bg-gray-50 transition-all duration-300 shadow-sm;
+    @apply rounded-3xl p-5 bg-white border border-gray-200;
 }
 
 .features-section-inner {
@@ -35,7 +35,7 @@
 }
 
 .features-section-heading {
-    @apply font-semibold text-black text-2xl;
+    @apply font-semibold text-black text-xl;
 }
 
 .features-section-text {
@@ -43,7 +43,7 @@
 }
 
 .features-section-right {
-    @apply rounded-xl overflow-hidden mb-4;
+    @apply rounded-xl mb-4 overflow-hidden;
 }
 
 .features-section-right-image {
@@ -54,6 +54,6 @@
     @apply flex flex-col md:flex-row gap-6 text-gray-600 text-sm;
 
     p {
-        @apply md:w-1/2 text-sm md:text-base max-w-3xl;
+        @apply md:w-1/2 text-sm md:text-base max-w-3xl text-justify;
     }
 }

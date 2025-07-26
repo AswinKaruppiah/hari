@@ -1,3 +1,4 @@
+import { animateFadeYVariants, animateYChildVariants, animateYStriggerVariants } from "@/utils/animate";
 import Image from "next/image";
 import {
   FaUserTie,
@@ -5,6 +6,8 @@ import {
   FaClipboardCheck,
   FaBed,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
+
 
 export default function OurFacilities() {
   const features = [
@@ -35,14 +38,24 @@ export default function OurFacilities() {
     <section className="our-fecilities-main-container">
       <div className="our-fecilities-sub-container">
         <div>
-          <h2>
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            variants={animateFadeYVariants()}
+            viewport={{ once: true, amount: 0.5 }}
+          >
             Rooted in Comfort, <br />
             Crafted for the Road
-          </h2>
+          </motion.h2>
 
-          <div className="features-section">
+
+          <motion.div
+            variants={animateYStriggerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0 }} className="features-section">
             {features.map(({ label, description, icon: Icon }, index) => (
-              <div key={index} className="features-section-card">
+              <motion.div variants={animateYChildVariants} key={index} className="features-section-card">
                 <div className="features-section-inner">
                   <div className="features-section-icon-layer">
                     <Icon className="features-section-icon" />
@@ -50,31 +63,49 @@ export default function OurFacilities() {
                   <h3 className="features-section-heading">{label}</h3>
                 </div>
                 <p className="features-section-text">{description}</p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
 
         <div>
           <div className="features-section-right">
-            <Image
-              src="/images/ourfecility-image.jpg"
-              alt="Luxury Bus"
-              width={700}
-              height={480}
-              className="features-section-right-image"
-            />
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              variants={animateFadeYVariants()}
+              viewport={{ once: true, amount: 0.5 }}
+              className="features-section-right"
+            >
+              <Image
+                src="/images/ourfecility-image.jpg"
+                alt="Luxury Bus"
+                width={700}
+                height={480}
+                className="features-section-right-image"
+              />
+            </motion.div>
+
           </div>
           <div className="features-section-right-text">
-            <p>
+            <motion.p
+              initial="hidden"
+              whileInView="visible"
+              variants={animateFadeYVariants({ opacityValue: 0.7 })}
+              viewport={{ once: true, amount: 0.5 }}>
               We believe that a comfortable journey begins with thoughtful
               services. From the moment you board, our experienced crew ensures
 
-            </p>
-            <p>
+            </motion.p>
+            <motion.p
+              initial="hidden"
+              whileInView="visible"
+              variants={animateFadeYVariants({ opacityValue: 0.7 })}
+              viewport={{ once: true, amount: 0.5 }}
+            >
               Whether it's our trained boarding crew, smooth luggage
               handling, or our clean sleeper berths each feature is crafted to
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>
