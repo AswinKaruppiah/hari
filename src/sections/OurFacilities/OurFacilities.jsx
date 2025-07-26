@@ -1,4 +1,8 @@
-import { animateFadeYVariants, animateYChildVariants, animateYStriggerVariants } from "@/utils/animate";
+import {
+  animateFadeYVariants,
+  animateYChildVariants,
+  animateYStriggerVariants,
+} from "@/utils/animate";
 import Image from "next/image";
 import {
   FaUserTie,
@@ -38,6 +42,12 @@ export default function OurFacilities() {
     <section className="our-fecilities-main-container">
       <div className="our-fecilities-sub-container">
         <div>
+          <motion.h2
+            initial="hidden"
+            whileInView="visible"
+            variants={animateFadeYVariants()}
+            viewport={{ once: true, amount: 0.5 }}
+          >
           <motion.h2
             initial="hidden"
             whileInView="visible"
@@ -92,10 +102,10 @@ export default function OurFacilities() {
               initial="hidden"
               whileInView="visible"
               variants={animateFadeYVariants({ opacityValue: 0.7 })}
-              viewport={{ once: true, amount: 0.5 }}>
+              viewport={{ once: true, amount: 0.5 }}
+            >
               We believe that a comfortable journey begins with thoughtful
               services. From the moment you board, our experienced crew ensures
-
             </motion.p>
             <motion.p
               initial="hidden"
@@ -103,7 +113,7 @@ export default function OurFacilities() {
               variants={animateFadeYVariants({ opacityValue: 0.7 })}
               viewport={{ once: true, amount: 0.5 }}
             >
-              Whether it's our trained boarding crew, smooth luggage
+              Whether it&apos;s our trained boarding crew, smooth luggage
               handling, or our clean sleeper berths each feature is crafted to
             </motion.p>
           </div>
