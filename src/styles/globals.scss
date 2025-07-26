@@ -5,6 +5,9 @@
 @use '@/sections/Gallery/Gallery' as *;
 @use '@/sections/GetInTouch/GetInTouch' as *;
 @use '@/sections/Footer/Footer' as *;
+@use '@/sections/About/About' as *;
+@use '@/sections/OurFacilities/OurFacilities' as *;
+@use '@/sections/WeProvided/WeProvided' as *;
 
 @tailwind base;
 @tailwind components;
