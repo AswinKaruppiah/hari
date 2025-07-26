@@ -38,7 +38,7 @@ export default function Hero() {
             initial="hidden"
             whileInView="visible"
             variants={animateFadeYVariants({ delay: 0.4 })}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true }}
             className="demo-hero-title"
           >
             <h1>Discove Rome with our expert guides</h1>
@@ -47,7 +47,7 @@ export default function Hero() {
             initial="hidden"
             whileInView="visible"
             variants={animateFadeYVariants({ delay: 0.7 })}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true }}
             className="demo-hero-tag-line"
           >
             <h6>Memories of a lifetime are only a few days away</h6>
