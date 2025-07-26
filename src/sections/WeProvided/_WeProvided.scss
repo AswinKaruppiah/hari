@@ -1,0 +1,29 @@
+.we-provided-main {
+    @apply px-6 py-12;
+}
+
+
+.best-services-heading {
+    @apply text-3xl md:text-5xl font-medium text-center mb-10;
+}
+
+.service-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-6xl mx-auto;
+}
+
+.service-card {
+    @apply bg-gray-50 flex flex-col items-start justify-start p-6 rounded-3xl shadow;
+}
+
+.we-provided-icon-layer {
+    @apply flex items-center justify-center bg-[#F0F4EF] w-14 h-14 rounded-full mb-3;
+}
+
+
+.service-title {
+    @apply text-lg md:text-2xl font-semibold text-[#111827] mb-2;
+}
+
+.service-description {
+    @apply text-sm text-gray-600 opacity-80 text-start;
+}

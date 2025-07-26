@@ -1,8 +1,12 @@
 import Footer from "@/sections/Footer/Footer";
 import Gallery from "@/sections/Gallery/Gallery";
 import GetInTouch from "@/sections/GetInTouch/GetInTouch";
-import Hero from "@/sections/Hero/Hero";
+
+import About from "@/sections/About/About";
+import OurFacilities from "@/sections/OurFacilities/OurFacilities";
+import WeProvided from "@/sections/WeProvided/WeProvided";
 import Head from "next/head";
+import Hero from "@/sections/Hero/Hero";
 
 export default function Home() {
   return (
@@ -15,6 +19,9 @@ export default function Home() {
       </Head>
       <>
         <Hero />
+        <About />
+        <OurFacilities />
+        <WeProvided />
         <Gallery />
         <GetInTouch />
         <Footer />
