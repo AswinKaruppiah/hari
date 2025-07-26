@@ -4,17 +4,17 @@ import { GiReceiveMoney } from 'react-icons/gi';
 
 const steps = [
     {
-        icon: <FaBusAlt className="text-[#BAF48A] text-2xl" />,
+        icon: <FaBusAlt className="text-[#BAF48A] text-4xl " />,
         title: 'Fast Booking',
         description: 'Enjoy buying your bus tickets online from home or on the go, with our mobile friendly site',
     },
     {
-        icon: <RiChatSmileAiLine className="text-[#BAF48A] text-2xl" />,
+        icon: <RiChatSmileAiLine className="text-[#BAF48A] text-4xl " />,
         title: 'Stress Free',
         description: 'The simplest and stress free way to book your bus travel all in one purchase.',
     },
     {
-        icon: <GiReceiveMoney className="text-[#BAF48A] text-2xl" />,
+        icon: <GiReceiveMoney className="text-[#BAF48A] text-4xl " />,
         title: 'Spend Less',
         description: 'We have the affordable prices and the best carriers all in one place.',
     },
@@ -26,6 +26,11 @@ export default function WeProvided() {
         <div className="we-provided-main">
 
             <h2 className="best-services-heading">Best Services</h2>
+
+            <p className="best-servives-sub-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat error qui, vero iste nulla ex maxime veniam rem consequatur animi tenetur voluptate earum cum tempora quod unde! Reiciendis, error corrupti.
+            </p>
+
 
             <div className="service-grid">
                 {steps.map((step, index) => (

@@ -69,14 +69,11 @@ export default function OurFacilities() {
             <p>
               We believe that a comfortable journey begins with thoughtful
               services. From the moment you board, our experienced crew ensures
-              seamless transitions, curated comfort, and personalized. our
-              experienced crew ensures seamless.
+
             </p>
             <p>
-              Whether it&apos;s our trained boarding crew, smooth luggage
-              handling, or our clean sleeper berths — each feature is crafted to
-              elevate your road travel experience. each feature is crafted to
-              elevate your road travel experience.
+              Whether it's our trained boarding crew, smooth luggage
+              handling, or our clean sleeper berths each feature is crafted to
             </p>
           </div>
         </div>

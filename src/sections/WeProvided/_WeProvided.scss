@@ -1,10 +1,15 @@
 .we-provided-main {
-    @apply px-6 py-12;
+    @apply px-0 pb-12 pt-28 3xl:max-w-screen-3xl max-w-screen-2xl;
+
+}
+
+.best-servives-sub-text {
+    @apply text-sm md:text-base text-center max-w-3xl mx-auto opacity-70 pt-5 pb-10;
 }
 
 
 .best-services-heading {
-    @apply text-3xl md:text-5xl font-medium text-center mb-10;
+    @apply text-3xl md:text-5xl font-medium text-center mb-0;
 }
 
 .service-grid {
@@ -12,11 +17,11 @@
 }
 
 .service-card {
-    @apply bg-gray-50 flex flex-col items-start justify-start p-6 rounded-3xl shadow;
+    @apply bg-white flex flex-col gap-1 items-start justify-start p-6 rounded-3xl border border-gray-200;
 }
 
 .we-provided-icon-layer {
-    @apply flex items-center justify-center bg-[#F0F4EF] w-14 h-14 rounded-full mb-3;
+    @apply flex items-center justify-center bg-[#BAF48A] shrink-0 p-4 bg-opacity-10 rounded-full mb-3;
 }
 
 
