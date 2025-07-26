@@ -43,7 +43,13 @@ export default function Hero() {
           >
             <h1>Discove Rome with our expert guides</h1>
           </motion.div>
-          <motion.div className="demo-hero-tag-line">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            variants={animateFadeYVariants({ delay: 0.7 })}
+            viewport={{ once: true, amount: 0.5 }}
+            className="demo-hero-tag-line"
+          >
             <h6>Memories of a lifetime are only a few days away</h6>
           </motion.div>
         </div>
